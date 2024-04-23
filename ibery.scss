@@ -293,7 +293,7 @@ $light-purple: #9e9ad6;
             min-height: 70px;
             p {
               font-size: 16px;
-              font-family: "Playfair Display", serif;
+              //   font-family: "Playfair Display", serif;
               letter-spacing: 1px;
               text-align: center;
               padding-inline: 12px;
@@ -375,8 +375,21 @@ $light-purple: #9e9ad6;
                 font-size: 16px;
                 font-weight: 400;
                 color: rgb(116, 116, 116);
-                // color: $light-purple;
+                // color: white;
                 padding: 0px 0px 0px 6px;
+              }
+              &_wrap {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+
+                &_icon {
+                  height: 34px;
+                  width: auto;
+                  margin-top: 10px;
+                  cursor: pointer;
+                }
               }
             }
           }
