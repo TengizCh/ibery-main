@@ -28,3 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     contact.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+AOS.init({
+  offset: 200, // offset (in px) from the original trigger point
+  duration: 3000, // animation duration (in ms)
+});
