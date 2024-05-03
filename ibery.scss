@@ -1,6 +1,7 @@
 $medium-blue: #43a7f7;
 $dark-purple: #312581;
 $light-purple: #9e9ad6;
+$nav-green: #00852b;
 
 .animated-element {
   width: 100px;
@@ -21,16 +22,17 @@ $light-purple: #9e9ad6;
 .navbar {
   width: 100%;
   z-index: 999;
-  background-color: rgba(125, 125, 125, 0.436) !important;
+  background-color: white !important;
   position: fixed !important;
   top: 0;
   transition: 0.3s ease-in-out;
 
   a {
-    color: white !important;
+    color: $nav-green !important;
     font-size: 16px;
     position: relative;
     cursor: pointer;
+    font-weight: 500;
 
     &::before {
       content: "";
@@ -40,7 +42,7 @@ $light-purple: #9e9ad6;
       border-radius: 5px;
       bottom: 0;
       left: 0;
-      background-color: $dark-purple;
+      background-color: $nav-green;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -49,7 +51,7 @@ $light-purple: #9e9ad6;
     }
 
     &:hover {
-      color: $dark-purple;
+      color: $nav-green;
 
       &::before {
         visibility: visible;
@@ -72,7 +74,7 @@ $light-purple: #9e9ad6;
 .navbar-collapse {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .navbar-brand {
@@ -90,6 +92,38 @@ $light-purple: #9e9ad6;
   position: absolute;
   top: 0;
   //   opacity: 0.4;`
+}
+
+.about_background {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    white,
+    white
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  z-index: 222;
+}
+
+.about_background_img {
+  background-image: url("./assets/berrybg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(50%);
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  z-index: 111;
 }
 
 // .main_background1 {
@@ -126,8 +160,9 @@ $light-purple: #9e9ad6;
     z-index: 100;
     &_wrap {
       &_logo {
-        color: white;
+        color: white !important;
         font-size: 56px;
+        fill: white !important;
       }
     }
   }
@@ -138,48 +173,40 @@ $light-purple: #9e9ad6;
     min-height: 100vh;
     width: 100%;
     background-color: white;
+    position: relative;
+
     &_wrap {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
-      width: 80%;
+      width: 66%;
       height: 100%;
+      flex-direction: column;
+
       &_title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-        max-width: 320px;
-        border: 12px solid #9e9ad63f;
-        height: 614px;
-        min-height: 506px;
-        padding: 20px;
-        &_text {
-          font-size: 48px;
-          font-weight: 700;
-          color: $dark-purple;
-          letter-spacing: 2px;
-          font-family: "Playfair Display", serif;
-          text-align: center;
-        }
+        color: $nav-green;
+        font-size: 26px;
+        font-weight: 600;
+        z-index: 999;
+        align-self: flex-start;
       }
       &_info {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 100%;
         padding: 30px;
         flex-direction: column;
-        height: 614px;
-        min-height: 614px;
+        padding: 0px;
+        padding-bottom: 150px;
         &_text {
-          p {
-            font-size: 16px;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-align: justify;
-            color: #9e9ad6;
-          }
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          text-align: justify;
+          color: #2c367b;
+          z-index: 999;
+          line-height: 26px;
         }
         &_img {
           display: flex;
@@ -204,6 +231,7 @@ $light-purple: #9e9ad6;
     background-color: white;
     flex-direction: column;
     margin-bottom: 100px;
+    padding-top: 80px;
     &_wrap {
       display: flex;
       align-items: center;
