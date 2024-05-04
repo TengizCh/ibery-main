@@ -96,8 +96,9 @@ $main-blue: #2c367b;
   width: 100vw;
   filter: brightness(50%);
   position: absolute;
-  top: 50px;
+  top: 0;
   //   opacity: 0.4;`
+  object-fit: cover;
 }
 
 // .about_background {
@@ -359,7 +360,7 @@ $main-blue: #2c367b;
       width: 80%;
       height: 100%;
       z-index: 999;
-      background-color: rgba(255, 255, 255, 0.555);
+      background-color: $main-blue;
       padding: 20px;
       border-radius: 6px;
       max-width: 1100px;
@@ -383,7 +384,7 @@ $main-blue: #2c367b;
             text-transform: uppercase;
             align-self: center;
             font-family: "Playfair Display", serif;
-            color: $dark-purple;
+            color: white;
           }
           &_items {
             display: flex;
@@ -398,14 +399,14 @@ $main-blue: #2c367b;
                 text-transform: uppercase;
                 margin: 0px;
                 font-weight: 500;
-                color: $dark-purple;
+                color: white;
                 font-size: 16px;
                 font-family: "Playfair Display", serif;
               }
               &_info {
                 font-size: 16px;
                 font-weight: 400;
-                color: rgb(116, 116, 116);
+                color: white;
                 // color: white;
                 padding: 0px 0px 0px 6px;
               }
