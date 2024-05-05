@@ -27,7 +27,7 @@ $main-blue: #2c367b;
 .navbar {
   width: 100%;
   z-index: 999;
-  background-color: white !important;
+  background-color: #ffffffdb !important;
   position: fixed !important;
   top: 0;
   transition: 0.3s ease-in-out;
@@ -467,5 +467,19 @@ $main-blue: #2c367b;
 
   .navbar-nav {
     align-items: center;
+  }
+
+  .main {
+    &_about {
+      &_wrap {
+        width: 72%;
+        &_info {
+          &_text {
+            font-weight: 500;
+            line-height: 28px;
+          }
+        }
+      }
+    }
   }
 }
