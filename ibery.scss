@@ -439,3 +439,33 @@ $main-blue: #2c367b;
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .container-fluid {
+    margin-inline: 20px !important;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .dropdown-menu.show {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar {
+    background-color: #ffffffdb !important;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+}
