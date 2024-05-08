@@ -30,6 +30,14 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="/main.js"></script>
+    <script>
+      function closeNavbar() {
+        var navbarToggler = document.querySelector(".navbar-toggler");
+        var navbarCollapse = document.querySelector(".navbar-collapse");
+        navbarToggler.classList.add("collapsed");
+        navbarCollapse.classList.remove("show");
+      }
+    </script>
   </head>
   <body>
     <div id="app" class="main">
@@ -54,18 +62,28 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" id="HomeBtn1"
+                <a
+                  onclick="closeNavbar()"
+                  class="nav-link active"
+                  aria-current="page"
+                  id="HomeBtn1"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="AboutusBtn">About Us</a>
+                <a onclick="closeNavbar()" class="nav-link" id="AboutusBtn"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="ProjectsBtn">Projects</a>
+                <a onclick="closeNavbar()" class="nav-link" id="ProjectsBtn"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="ContactBtn">Contact</a>
+                <a onclick="closeNavbar()" class="nav-link" id="ContactBtn"
+                  >Contact</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -78,8 +96,16 @@
                   Language
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">English</a></li>
-                  <li><a class="dropdown-item" href="#">ქართული</a></li>
+                  <li>
+                    <a onclick="closeNavbar()" class="dropdown-item" href="#"
+                      >English</a
+                    >
+                  </li>
+                  <li>
+                    <a onclick="closeNavbar()" class="dropdown-item" href="#"
+                      >ქართული</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>

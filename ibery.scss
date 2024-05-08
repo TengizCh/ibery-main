@@ -491,24 +491,33 @@ $dark-blue: #171f53;
         }
       }
     }
+    &_projects {
+      &_wrap {
+        &_content {
+          &_item {
+            width: 360px;
+          }
+        }
+      }
+    }
     &_contact {
       &_wrap {
         background-position: top;
         background-position-y: 160px;
         &_content {
           flex-direction: column;
-          max-height: 660px;
-          gap: 30px;
+          max-height: 690px;
+          gap: 24px;
           &_details {
             width: 100%;
             height: 50%;
-            gap: 34px;
+            gap: 28px;
             &_title {
               margin: 0px;
               font-size: 22px;
             }
             &_items {
-              gap: 36px;
+              gap: 22px;
               &_item {
                 &_name {
                   font-size: 14px;
@@ -529,7 +538,7 @@ $dark-blue: #171f53;
             width: 100%;
             height: 50%;
             // max-height: 100px !important;
-            overflow: hidden;
+            // overflow: hidden;
           }
         }
       }
