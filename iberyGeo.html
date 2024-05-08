@@ -39,5 +39,247 @@
       }
     </script>
   </head>
-  <body></body>
+  <body>
+    <div id="app" class="main">
+      <nav
+        data-aos="fade-in"
+        data-aos-duration="2000"
+        class="navbar navbar-expand-lg bg-body-tertiary"
+      >
+        <div class="container-fluid">
+          <img class="nav-logo" src="./public/assets/Logo_1.svg" alt="" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  onclick="closeNavbar()"
+                  class="nav-link active"
+                  aria-current="page"
+                  id="HomeBtn1"
+                  >მთავარი</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="closeNavbar()" class="nav-link" id="AboutusBtn"
+                  >ჩვენ შესახებ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="closeNavbar()" class="nav-link" id="ProjectsBtn"
+                  >პროექტები</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="closeNavbar()" class="nav-link" id="ContactBtn"
+                  >კონტაქტი</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ენა
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a onclick="closeNavbar()" class="dropdown-item" href="#"
+                      >English</a
+                    >
+                  </li>
+                  <li>
+                    <a onclick="closeNavbar()" class="dropdown-item" href="#"
+                      >ქართული</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="home" class="main_landing">
+        <div class="main_landing_wrap">
+          <img
+            src="./public/assets/Logo_4.svg"
+            class="main_landing_wrap_logo"
+          />
+        </div>
+      </div>
+      <video autoplay muted loop class="main_background">
+        <source src="./public/assets/vidoe.mp4" type="video/mp4" />
+      </video>
+      <div id="aboutus" class="main_about">
+        <div class="main_about_wrap">
+          <p data-aos="fade-down" class="main_about_wrap_title">About Us</p>
+          <div class="main_about_wrap_info">
+            <p data-aos="fade-down" class="main_about_wrap_info_text">
+              Established in 2022, Located Georgia's Samegrelo region, our
+              headquarters proudly reside in the quaint village of Lesichene,
+              Chkhorotsku. Our company boasts ownership of 45 hectares of prime
+              blueberry orchards, cultivating a total of 120,000 plants
+              comprising a diverse array of early varieties including Colibri,
+              Sweetheart, New Hanover, Alix Blue, and Blue One. Our esteemed
+              team comprises seasoned managers and skilled agricultural
+              specialists dedicated to nurturing our blueberry plants with
+              meticulous care. Each plant receives optimal conditions essential
+              for yielding premium-quality blueberries.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="about_background"></div> -->
+      <div class="about_background_img"></div>
+      <div id="projects" class="main_projects">
+        <div class="main_projects_wrap">
+          <div class="main_projects_wrap_title">
+            <p data-aos="fade-in" class="main_projects_wrap_title_text">
+              Next Projects
+            </p>
+          </div>
+          <div class="main_projects_wrap_content">
+            <div data-aos="fade-up" class="main_projects_wrap_content_item">
+              <div class="main_projects_wrap_content_item_img">
+                <img
+                  class="main_projects_wrap_content_item_img_image"
+                  src="./public/assets/about1.png"
+                />
+                <div class="main_projects_wrap_content_item_img_cover"></div>
+              </div>
+              <div class="main_projects_wrap_content_item_text">
+                <p>
+                  Expanding our footprint, we've acquired an additional 55
+                  hectares of land
+                </p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="main_projects_wrap_content_item">
+              <div class="main_projects_wrap_content_item_img">
+                <img
+                  class="main_projects_wrap_content_item_img_image"
+                  src="./public/assets/about2.jpg"
+                />
+                <div class="main_projects_wrap_content_item_img_cover"></div>
+              </div>
+              <div class="main_projects_wrap_content_item_text">
+                <p>Covering a full 100 hectares with our tunnels</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="main_projects_wrap_content_item">
+              <div class="main_projects_wrap_content_item_img">
+                <img
+                  class="main_projects_wrap_content_item_img_image"
+                  src="./public/assets/about3.png"
+                />
+                <div class="main_projects_wrap_content_item_img_cover"></div>
+              </div>
+              <div class="main_projects_wrap_content_item_text">
+                <p>Planting up to 0.5 million blueberries</p>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="main_projects_wrap_content_item">
+              <div class="main_projects_wrap_content_item_img">
+                <img
+                  class="main_projects_wrap_content_item_img_image"
+                  src="./public/assets/about4.png"
+                />
+                <div class="main_projects_wrap_content_item_img_cover"></div>
+              </div>
+              <div class="main_projects_wrap_content_item_text">
+                <p>
+                  Refrigerated warehouse designed for 2000 tons of blueberry
+                  products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="main_contact">
+        <div class="main_contact_bg"></div>
+        <div class="main_contact_wrap">
+          <div class="main_contact_wrap_content">
+            <div class="main_contact_wrap_content_details">
+              <p class="main_contact_wrap_content_details_title">Contact us</p>
+              <div class="main_contact_wrap_content_details_items">
+                <div class="main_contact_wrap_content_details_items_item">
+                  <p class="main_contact_wrap_content_details_items_item_name">
+                    Email:
+                  </p>
+                  <p class="main_contact_wrap_content_details_items_item_info">
+                    support@ibery.com
+                  </p>
+                </div>
+                <div class="main_contact_wrap_content_details_items_item">
+                  <p class="main_contact_wrap_content_details_items_item_name">
+                    Address:
+                  </p>
+                  <p class="main_contact_wrap_content_details_items_item_info">
+                    Georgia, Tbilisi
+                  </p>
+                </div>
+                <div class="main_contact_wrap_content_details_items_item">
+                  <p class="main_contact_wrap_content_details_items_item_name">
+                    phone:
+                  </p>
+                  <p class="main_contact_wrap_content_details_items_item_info">
+                    +995 599848202
+                  </p>
+                </div>
+                <div class="main_contact_wrap_content_details_items_item">
+                  <p class="main_contact_wrap_content_details_items_item_name">
+                    contact us with:
+                  </p>
+                  <div
+                    class="main_contact_wrap_content_details_items_item_wrap"
+                  >
+                    <img
+                      src="./public/assets/FB.svg"
+                      class="main_contact_wrap_content_details_items_item_wrap_icon"
+                    />
+                    <img
+                      src="./public/assets/INSTA.svg"
+                      class="main_contact_wrap_content_details_items_item_wrap_icon"
+                    />
+                    <img
+                      src="./public/assets/Linkdin.svg"
+                      class="main_contact_wrap_content_details_items_item_wrap_icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main_contact_wrap_content_map">
+              <div style="width: 100%">
+                <iframe
+                  width="100%"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  class="googlemap"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=42.4587998,%2042.0977566+(ibery)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  ><a href="https://www.gps.ie/">gps systems</a></iframe
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
