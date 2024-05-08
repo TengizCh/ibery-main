@@ -503,7 +503,8 @@ $dark-blue: #1f29696e;
     &_contact {
       &_wrap {
         background-position: top;
-        background-position-y: 160px;
+        background-position-y: 60px;
+        background-size: 300px;
         &_content {
           flex-direction: column;
           max-height: 690px;
