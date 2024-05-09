@@ -1,5 +1,3 @@
-import "./style.css";
-
 document.addEventListener("DOMContentLoaded", function () {
   // const homebtn = document.getElementById("Homebtn");
   const homebtn1 = document.getElementById("HomeBtn1");
