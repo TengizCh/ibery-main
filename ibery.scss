@@ -327,7 +327,6 @@ video::-webkit-media-controls {
       filter: brightness(100%);
       position: absolute;
       top: 0;
-      //   opacity: 0.8;
     }
     &_wrap {
       width: 80%;
@@ -356,12 +355,12 @@ video::-webkit-media-controls {
           width: 50%;
           height: 100%;
           &_title {
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 26px;
+            font-weight: 500;
             letter-spacing: 2px;
             text-transform: uppercase;
             align-self: center;
-            font-family: "Playfair Display", serif;
+            font-family: "Noto Sans", sans-serif;
             color: white;
           }
           &_items {
@@ -379,13 +378,14 @@ video::-webkit-media-controls {
                 font-weight: 500;
                 color: white;
                 font-size: 16px;
-                font-family: "Playfair Display", serif;
+                font-family: "Noto Sans", sans-serif;
+                letter-spacing: 1px;
               }
               &_info {
                 font-size: 16px;
-                font-weight: 400;
+                font-weight: 300;
                 color: white;
-                // color: white;
+                font-family: "Noto Sans", sans-serif;
                 padding: 0px 0px 0px 6px;
               }
               &_wrap {
