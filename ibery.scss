@@ -37,6 +37,7 @@ video::-webkit-media-controls {
   top: 0;
   transition: 0.3s ease-in-out;
   border-bottom: 1px solid rgba(196, 196, 196, 0.371);
+  font-family: "Noto Sans", sans-serif;
 
   a {
     color: $main-blue !important;
@@ -176,6 +177,7 @@ video::-webkit-media-controls {
         font-weight: 600;
         z-index: 333;
         align-self: flex-start;
+        font-family: "Noto Sans", sans-serif;
       }
       &_info {
         display: flex;
@@ -185,24 +187,14 @@ video::-webkit-media-controls {
         flex-direction: column;
         &_text {
           font-size: 16px;
-          font-weight: 600;
+          font-weight: 500;
           letter-spacing: 1px;
           text-align: justify;
           color: $main-blue;
           z-index: 333;
           line-height: 26px;
+          font-family: "Noto Sans", sans-serif;
         }
-        // &_img {
-        //   display: flex;
-        //   align-items: flex-end;
-        //   justify-content: flex-end;
-        //   height: 364px;
-        //   width: 100%;
-        //   img {
-        //     height: 100%;
-        //     width: auto;
-        //   }
-        // }
       }
     }
   }
@@ -214,7 +206,6 @@ video::-webkit-media-controls {
     width: 100%;
     background-color: $main-blue;
     flex-direction: column;
-    // margin-bottom: 200px;
     padding-block: 40px;
     &_wrap {
       display: flex;
@@ -222,20 +213,23 @@ video::-webkit-media-controls {
       justify-content: space-between;
       flex-direction: column;
       width: 80%;
+      max-width: 874px;
       height: 100%;
-      gap: 40px;
+      gap: 20px;
       padding-block: 80px;
       &_title {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         gap: 20px;
         width: 100%;
+
         &_text {
           font-size: 26px;
           color: white;
           font-weight: 600;
           white-space: nowrap;
+          font-family: "Noto Sans", sans-serif;
         }
       }
       &_content {
@@ -255,7 +249,6 @@ video::-webkit-media-controls {
           width: 420px;
           border-radius: 8px;
           position: relative;
-          // box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
           overflow: hidden;
 
           &_img {
@@ -298,7 +291,7 @@ video::-webkit-media-controls {
             min-height: 60px;
             width: 100%;
             z-index: 222;
-            // text-align: center;
+
             p {
               font-size: 14px;
               font-weight: 600;
@@ -307,6 +300,8 @@ video::-webkit-media-controls {
               color: $main-blue;
               line-height: 24px;
               margin: 0px;
+              font-family: "Noto Sans", sans-serif;
+              font-style: italic;
             }
           }
         }
