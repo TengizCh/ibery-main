@@ -5,6 +5,10 @@ $nav-green: #00852b;
 $main-blue: #2c367b;
 $dark-blue: #1f29696e;
 
+video::-webkit-media-controls {
+  display: none;
+}
+
 .animated-element {
   width: 100px;
   height: 100px;
@@ -35,7 +39,7 @@ $dark-blue: #1f29696e;
   border-bottom: 1px solid rgba(196, 196, 196, 0.371);
 
   a {
-    color: $nav-green !important;
+    color: $main-blue !important;
     font-size: 16px;
     position: relative;
     cursor: pointer;
@@ -58,7 +62,7 @@ $dark-blue: #1f29696e;
     }
 
     &:hover {
-      color: $nav-green;
+      color: $nav-green !important;
 
       &::before {
         visibility: visible;
@@ -106,11 +110,11 @@ $dark-blue: #1f29696e;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
   filter: brightness(100%);
   position: absolute;
-  top: 150vh;
+  top: 100vh;
   left: 0;
   z-index: 111;
 }
@@ -160,8 +164,11 @@ $dark-blue: #1f29696e;
       align-items: center;
       justify-content: center;
       width: 66%;
-      height: 100%;
       flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.81);
+      z-index: 222;
+      padding: 20px 30px 20px 30px;
+      border-radius: 8px;
 
       &_title {
         color: $nav-green;
@@ -175,30 +182,27 @@ $dark-blue: #1f29696e;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 30px;
         flex-direction: column;
-        padding: 0px;
-        padding-bottom: 150px;
         &_text {
           font-size: 16px;
-          font-weight: 500;
+          font-weight: 600;
           letter-spacing: 1px;
           text-align: justify;
           color: $main-blue;
           z-index: 333;
           line-height: 26px;
         }
-        &_img {
-          display: flex;
-          align-items: flex-end;
-          justify-content: flex-end;
-          height: 364px;
-          width: 100%;
-          img {
-            height: 100%;
-            width: auto;
-          }
-        }
+        // &_img {
+        //   display: flex;
+        //   align-items: flex-end;
+        //   justify-content: flex-end;
+        //   height: 364px;
+        //   width: 100%;
+        //   img {
+        //     height: 100%;
+        //     width: auto;
+        //   }
+        // }
       }
     }
   }
