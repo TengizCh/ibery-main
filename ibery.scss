@@ -472,9 +472,10 @@ video::-webkit-media-controls {
 
   .main {
     &_about {
+      // padding-top: 40px;
       &_wrap {
-        width: 72%;
-        padding-top: 42px;
+        width: 88%;
+        padding: 15px 25px 15px 25px;
         &_info {
           &_text {
             font-weight: 500;
@@ -583,6 +584,11 @@ video::-webkit-media-controls {
             line-height: 30px;
           }
         }
+      }
+    }
+    &_projects {
+      &_wrap {
+        width: 420px;
       }
     }
   }
