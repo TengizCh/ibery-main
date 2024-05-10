@@ -249,14 +249,14 @@ video::-webkit-media-controls {
           align-items: center;
           justify-content: flex-start;
           flex-direction: column;
-          gap: 10px;
+          // gap: 10px;
           background-color: white;
           height: 300px;
           max-height: 310px;
           width: 420px;
           border-radius: 8px;
           position: relative;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+          // box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
           overflow: hidden;
 
           &_img {
@@ -266,7 +266,7 @@ video::-webkit-media-controls {
             overflow: hidden;
             &_image {
               height: auto;
-              min-height: 250px;
+              min-height: 300px;
               width: 420px;
               border-radius: 6px;
               filter: brightness(100%);
@@ -279,12 +279,14 @@ video::-webkit-media-controls {
                 to bottom,
                 rgba(255, 255, 255, 0),
                 rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0),
+                white,
                 white
               );
               background-position: center;
               background-repeat: no-repeat;
               background-size: cover;
-              height: 250px;
+              height: 300px;
               width: 420px;
               position: absolute;
               z-index: 222;
