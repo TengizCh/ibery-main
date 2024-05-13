@@ -89,6 +89,10 @@ video::-webkit-media-controls {
   justify-content: center;
 }
 
+// .navbar-toggler-icon:active {
+//   rotate: 90deg;
+// }
+
 .navbar-brand {
   margin: 0px;
 }
@@ -122,7 +126,7 @@ video::-webkit-media-controls {
 
 .dropdown-menu {
   a {
-    color: black !important;
+    color: $main-blue !important;
   }
 }
 

@@ -33,6 +33,73 @@
         navbarToggler.classList.add("collapsed");
         navbarCollapse.classList.remove("show");
       }
+
+      let currentLanguage = "en";
+
+      function switchToEnglish() {
+        currentLanguage = "en";
+        closeNavbar();
+        updateLanguage();
+      }
+      function switchToGeorgian() {
+        currentLanguage = "ge";
+        closeNavbar();
+        updateLanguage();
+      }
+      function updateLanguage() {
+        if (currentLanguage === "ge") {
+          document.getElementById("HomeBtn1").innerText = "მთავარი";
+          document.getElementById("AboutusBtn").innerText = "ჩვენს შესახებ";
+          document.getElementById("ProjectsBtn").innerText = "პროექტები";
+          document.getElementById("ContactBtn").innerText = "კონტაქტი";
+          document.getElementById("LanguageBtn").innerText = "ენა";
+          document.getElementById("Aboutus").innerText = "ჩვენ შესახებ";
+          document.getElementById("AboutText").innerText =
+            "დაარსდა 2022 წელს. მდებარეობს საქართველოში, სამეგრელოს რაიონში, ჩხოროწყუში, სოფელ ლესიჩენეში. კომპანია ფლობს 45 ჰა მიწის ფართობს, სადაც გაშენებულია 120 000 მოცვის ნერგი, საადრეო ჯიშები: Colibri, Sweetheart, New Hanover, Alix Blue, Blue one. კომპანიის გუნდი დაკომპლექტებულია გამოცდილი მენეჯერებისა და სოფლის მეურნეობის სპეციალისტებისგან. მცენარეთა მოვლა ხორციელდება ყველა იმ საჭირო პირობების დაცვით, რომლის საფუძველზეც ხდება მაღალი ხარისხის და გემოვნური თვისებების მქონე მოცვის მიღება.";
+          document.getElementById("Projects").innerText = "მომდევნო პროექტები";
+          document.getElementById("project1").innerText =
+            "55 ჰექტარი მიწის დამატება";
+          document.getElementById("project2").innerText =
+            "სრული 100 ჰექტარი მიწის გვირაბებით დაფარვა";
+          document.getElementById("project3").innerText =
+            "0,5 მილიონამდე მოცვის ნერგის დარგვა";
+          document.getElementById("project4").innerText =
+            "2000 ტონა მოცვის პროდუქციაზე გათვლილი სამაცივრე-სასაწყობა მეურნეობა";
+          document.getElementById("ContactUs").innerText = "კონტაქტი";
+          document.getElementById("Mail").innerText = "მეილი:";
+          document.getElementById("Address").innerText = "მისამართი:";
+          document.getElementById("Phone").innerText = "ტელეფონი:";
+          document.getElementById("AddressInfo").innerText =
+            "საქართველო, თბილისი";
+          document.getElementById("ContactLogo").innerText = "დაგვიკავშირდით:";
+        } else if (currentLanguage === "en") {
+          document.getElementById("HomeBtn1").innerText = "Home";
+          document.getElementById("AboutusBtn").innerText = "About Us";
+          document.getElementById("ProjectsBtn").innerText = "Projects";
+          document.getElementById("ContactBtn").innerText = "Contact";
+          document.getElementById("LanguageBtn").innerText = "Language";
+          document.getElementById("Aboutus").innerText = "About Us";
+          document.getElementById("AboutText").innerText =
+            "Established in 2022, Located Georgia's Samegrelo region, our headquarters proudly reside in the quaint village of Lesichene, Chkhorotsku. Our company boasts ownership of 45 hectares of prime blueberry orchards, cultivating a total of 120,000 plants comprising a diverse array of early varieties including Colibri, Sweetheart, New Hanover, Alix Blue, and Blue One. Our esteemed team comprises seasoned managers and skilled agricultural specialists dedicated to nurturing our blueberry plants with meticulous care. Each plant receives optimal conditions essential for yielding premium-quality blueberries.";
+          document.getElementById("Projects").innerText = "Next Projects";
+
+          document.getElementById("project1").innerText =
+            "Expanding our footprint, we've acquired an additional 55 hectares of land";
+
+          document.getElementById("project2").innerText =
+            "Covering a full 100 hectares with our tunnels";
+          document.getElementById("project3").innerText =
+            "Planting up to 0.5 million blueberries";
+          document.getElementById("project4").innerText =
+            "Refrigerated warehouse designed for 2000 tons of blueberry products";
+          document.getElementById("ContactUs").innerText = "CONTACT US";
+          document.getElementById("Mail").innerText = "Email:";
+          document.getElementById("Address").innerText = "Address:";
+          document.getElementById("Phone").innerText = " phone:";
+          document.getElementById("AddressInfo").innerText = "Georgia, Tbilisi";
+          document.getElementById("ContactLogo").innerText = "contact us with:";
+        }
+      }
     </script>
   </head>
   <body>
@@ -83,18 +150,18 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  id="LanguageBtn"
                 >
                   Language
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a onclick="closeNavbar()" class="dropdown-item">English</a>
+                    <a onclick="switchToEnglish()" class="dropdown-item"
+                      >English</a
+                    >
                   </li>
                   <li>
-                    <a
-                      onclick="closeNavbar()"
-                      class="dropdown-item"
-                      href="./geo/index.html"
+                    <a onclick="switchToGeorgian()" class="dropdown-item"
                       >ქართული</a
                     >
                   </li>
@@ -125,9 +192,9 @@
       </video>
       <div id="aboutus" class="main_about">
         <div data-aos="fade-up" class="main_about_wrap">
-          <p class="main_about_wrap_title">About Us</p>
+          <p id="Aboutus" class="main_about_wrap_title">About Us</p>
           <div class="main_about_wrap_info">
-            <p class="main_about_wrap_info_text">
+            <p id="AboutText" class="main_about_wrap_info_text">
               Established in 2022, Located Georgia's Samegrelo region, our
               headquarters proudly reside in the quaint village of Lesichene,
               Chkhorotsku. Our company boasts ownership of 45 hectares of prime
@@ -146,7 +213,11 @@
       <div id="projects" class="main_projects">
         <div class="main_projects_wrap">
           <div class="main_projects_wrap_title">
-            <p data-aos="fade-up" class="main_projects_wrap_title_text">
+            <p
+              id="Projects"
+              data-aos="fade-up"
+              class="main_projects_wrap_title_text"
+            >
               Next Projects
             </p>
           </div>
@@ -160,7 +231,7 @@
                 <div class="main_projects_wrap_content_item_img_cover"></div>
               </div>
               <div class="main_projects_wrap_content_item_text">
-                <p>
+                <p id="project1">
                   Expanding our footprint, we've acquired an additional 55
                   hectares of land
                 </p>
@@ -175,7 +246,9 @@
                 <div class="main_projects_wrap_content_item_img_cover"></div>
               </div>
               <div class="main_projects_wrap_content_item_text">
-                <p>Covering a full 100 hectares with our tunnels</p>
+                <p id="project2">
+                  Covering a full 100 hectares with our tunnels
+                </p>
               </div>
             </div>
             <div data-aos="fade-up" class="main_projects_wrap_content_item">
@@ -187,7 +260,7 @@
                 <div class="main_projects_wrap_content_item_img_cover"></div>
               </div>
               <div class="main_projects_wrap_content_item_text">
-                <p>Planting up to 0.5 million blueberries</p>
+                <p id="project3">Planting up to 0.5 million blueberries</p>
               </div>
             </div>
             <div data-aos="fade-up" class="main_projects_wrap_content_item">
@@ -199,7 +272,7 @@
                 <div class="main_projects_wrap_content_item_img_cover"></div>
               </div>
               <div class="main_projects_wrap_content_item_text">
-                <p>
+                <p id="project4">
                   Refrigerated warehouse designed for 2000 tons of blueberry
                   products.
                 </p>
@@ -213,10 +286,15 @@
         <div class="main_contact_wrap">
           <div class="main_contact_wrap_content">
             <div class="main_contact_wrap_content_details">
-              <p class="main_contact_wrap_content_details_title">Contact us</p>
+              <p id="ContactUs" class="main_contact_wrap_content_details_title">
+                Contact us
+              </p>
               <div class="main_contact_wrap_content_details_items">
                 <div class="main_contact_wrap_content_details_items_item">
-                  <p class="main_contact_wrap_content_details_items_item_name">
+                  <p
+                    id="Mail"
+                    class="main_contact_wrap_content_details_items_item_name"
+                  >
                     Email:
                   </p>
                   <p class="main_contact_wrap_content_details_items_item_info">
@@ -224,23 +302,35 @@
                   </p>
                 </div>
                 <div class="main_contact_wrap_content_details_items_item">
-                  <p class="main_contact_wrap_content_details_items_item_name">
+                  <p
+                    id="Address"
+                    class="main_contact_wrap_content_details_items_item_name"
+                  >
                     Address:
                   </p>
-                  <p class="main_contact_wrap_content_details_items_item_info">
+                  <p
+                    id="AddressInfo"
+                    class="main_contact_wrap_content_details_items_item_info"
+                  >
                     Georgia, Tbilisi
                   </p>
                 </div>
                 <div class="main_contact_wrap_content_details_items_item">
-                  <p class="main_contact_wrap_content_details_items_item_name">
+                  <p
+                    id="Phone"
+                    class="main_contact_wrap_content_details_items_item_name"
+                  >
                     phone:
                   </p>
                   <p class="main_contact_wrap_content_details_items_item_info">
-                    +995 599848202
+                    +995 598477715
                   </p>
                 </div>
                 <div class="main_contact_wrap_content_details_items_item">
-                  <p class="main_contact_wrap_content_details_items_item_name">
+                  <p
+                    id="ContactLogo"
+                    class="main_contact_wrap_content_details_items_item_name"
+                  >
                     contact us with:
                   </p>
                   <div
