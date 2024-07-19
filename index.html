@@ -79,8 +79,11 @@
           document.getElementById("Mail").innerText = "მეილი:";
           document.getElementById("Address").innerText = "მისამართი:";
           document.getElementById("Phone").innerText = "ტელეფონი:";
+          document.getElementById("HQ").innerText = "მთავარი ოფისი:";
+          document.getElementById("HQInfo").innerText =
+            "თბილისი, ილია ჭავჭავაძის გამზ. 49ე";
           document.getElementById("AddressInfo").innerText =
-            "საქართველო, თბილისი";
+            "სოფელი ლესიჭინე, ჩხოროწყუ (სამეგრელო)";
           document.getElementById("ContactLogo").innerText = "დაგვიკავშირდით:";
         } else if (currentLanguage === "en") {
           document.getElementById("HomeBtn1").innerText = "Home";
@@ -313,12 +316,15 @@
                 </div>
                 <div class="main_contact_wrap_content_details_items_item">
                   <p
-                    id="Mail"
+                    id="HQ"
                     class="main_contact_wrap_content_details_items_item_name"
                   >
                     HQ:
                   </p>
-                  <p class="main_contact_wrap_content_details_items_item_info">
+                  <p
+                    id="HQInfo"
+                    class="main_contact_wrap_content_details_items_item_info"
+                  >
                     Tbilisi, Chavchavadze ave. N49e
                   </p>
                 </div>
