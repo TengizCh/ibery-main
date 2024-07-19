@@ -368,7 +368,7 @@ video::-webkit-media-controls {
           align-items: flex-start;
           justify-content: center;
           flex-direction: column;
-          gap: 50px;
+          gap: 20px;
           width: 50%;
           height: 100%;
           &_title {
@@ -388,7 +388,7 @@ video::-webkit-media-controls {
             justify-content: center;
             flex-direction: column;
             padding-left: 20px;
-            gap: 20px;
+            gap: 14px;
 
             &_item {
               &_name {
