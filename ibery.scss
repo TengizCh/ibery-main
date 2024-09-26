@@ -337,8 +337,7 @@ video::-webkit-media-controls {
       rgba(44, 54, 123, 1) 0%,
       rgba(255, 255, 255, 1) 80%
     );
-    position: relative;
-    z-index: 10;
+
     &_wrap {
       width: 1200px;
       display: grid;
